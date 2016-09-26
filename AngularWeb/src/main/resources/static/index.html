@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html ng-app="AppUI">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>AdminLTE 2</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- Bootstrap 3.3.6 -->
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!--<link href="dist/css/font-awesome.min.css" rel="stylesheet" />-->
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <!--<link href="dist/css/ionicons.min.css" rel="stylesheet" />-->
+    <!-- Theme style -->
+    <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+
+    <!-- Tree Menu style -->
+    <link rel="stylesheet" href="content/directives/treeMenu.css">
+	
+    <!-- DataTables -->
+    <link rel="stylesheet" href="lib/datatables/dataTables.bootstrap.css">
+    <link href="lib/angular-datatables-master/dist/plugins/bootstrap/datatables.bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.2.2/css/buttons.dataTables.min.css">
+
+    <!--JQuery support-->
+    <script src="lib/jQuery/jQuery-2.2.0.min.js"></script>
+    <script src="lib/datatables/jquery.dataTables.min.js"></script>
+    <script src="lib/datatables/dataTables.bootstrap.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.2.2/js/dataTables.buttons.min.js"></script>
+
+
+    <script src="lib/angular/angular.min.js"></script>
+    <script src="lib/angular/angular-animate.min.js"></script>
+    <script src="lib/angularui/angular-ui-router.min.js"></script>
+    <script src="lib/angularui/ui-bootstrap-tpls-2.0.1.min.js"></script>
+    <!--<script src="lib/angularui/angular-strap.min.js"></script>
+    <script src="lib/angularui/angular-strap.tpl.min.js"></script>-->
+
+	<!-- JWT -->
+	<script src="lib/angular-jwt/dist/angular-jwt.min.js"></script>
+	
+    <script src="lib/angular-datatables-master/dist/angular-datatables.min.js"></script>
+    <script src="lib/angular-datatables-master/dist/plugins/buttons/angular-datatables.buttons.min.js" ></script>
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="content/app.js"></script>
+    <script src="content/routing.js"></script>
+
+    <!--directives-->
+    <script src="content/directives/iCheck.js"></script>
+    <script src="content/directives/treeMenu.js"></script>
+    <script src="content/directives/fileImage.js"></script>
+
+    <!--services-->
+    <script src="content/services/apiService.js"></script>
+    <script src="content/services/authHttpResponseInterceptor.js"></script>
+    <script src="content/services/authService.js"></script>
+    <script src="content/services/appInfo.js"></script>
+    <script src="content/services/utility.js"></script>
+    <script src="content/services/dataMock.js"></script>
+
+    <!--controllers-->
+    <script src="content/views/home.js"></script>
+    <script src="content/views/auth/auth.js"></script>
+    <script src="content/views/auth/user.js"></script>
+    <script src="content/views/menu/menu.js"></script>
+    <script src="content/views/dashboard/dashboard.js"></script>
+    <script src="content/views/customer/customer.js"></script>
+    <script src="content/views/project/project.js"></script>
+    
+    
+    <!-- jquery implementation of main  -->
+    <link href="dist/css/skins/skin-blue.min.css" rel="stylesheet" />
+
+	<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+	<script src="dist/js/app.js"></script>
+</head>
+<body class="hold-transition" ng-class="{login:'login-page', register:'register-page', lockscreen:'lockscreen', '':'skin-blue sidebar-mini'}[state]" ui-view>
+</body>
+</html>

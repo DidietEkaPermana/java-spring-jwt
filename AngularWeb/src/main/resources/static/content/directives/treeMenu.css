@@ -1,0 +1,42 @@
+﻿/*tree style*/
+.treeview .list-group-item {
+    cursor: pointer;
+}
+
+.treeview span.indent {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.treeview span.icon {
+    margin-right: 5px;
+    width: 12px;
+}
+
+.treeview .node-disabled {
+    color: silver;
+    cursor: not-allowed;
+}
+
+.treeview .node-selected {
+    color: #ffffff;
+    background-color: #428bca;
+}
+
+    .treeview .node-selected:hover {
+        color: #000;
+        background-color: #428bca;
+    }
+
+.node-tree {
+    border: medium none;
+}
+
+    .node-tree:hover:not(.node-selected) {
+        color: #428bca;
+        background-color: #f5f5f5;
+    }
+
+.treeview .node-header {
+    background-color: silver;
+}
