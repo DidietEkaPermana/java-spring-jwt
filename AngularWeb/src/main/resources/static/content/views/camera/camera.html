@@ -1,0 +1,35 @@
+<!-- Content Header (Page header) -->
+<section class="content-header">
+    <h1>
+        Webcam
+        <small>with ng-camera</small>
+    </h1>
+    <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+        <li class="active">ng-camera</li>
+    </ol>
+</section>
+<!-- Main content -->
+<section class="content">
+    <ng-camera capture-message="Cheeeese!"
+               countdown="3"
+               output-height="160"
+               output-width="213"
+               viewer-height="320"
+               viewer-width="426"
+               image-format="jpeg"
+               jpeg-quality="100"
+               action-message="Take picture"
+               snapshot="vm.picture"
+               flash-fallback-url="/vendors/webcamjs/webcam.swf"
+               overlay-url="/overlay.png"
+               shutter-url="/shutter.mp3"></ng-camera>
+    <!-- for cropping:
+        crop-height="90"
+        crop-width="120"
+    -->
+
+    <img ng-if="vm.picture" ng-src="{{vm.picture}}" alt="webcam picture">
+</section>
+<!-- /.content -->
+

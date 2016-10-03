@@ -1,0 +1,35 @@
+<!-- Content Header (Page header) -->
+<section class="content-header">
+    <h1>
+        Webcam
+        <small>with WebRTC</small>
+    </h1>
+    <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+        <li class="active">WebRTC</li>
+    </ol>
+</section>
+<!-- Main content -->
+<section class="content">
+	<webcam class="well-small pull-right"
+            on-stream="onStream(stream)"
+            on-error="onError(err)"
+            on-streaming="onSuccess()"
+            channel="channel"
+            placeholder="'img/ajax-loader.gif'">
+            <div class="alert alert-error" ng-show="webcamError">
+                <span>Webcam could not be started. Did you give access to it?</span>
+            </div>
+        </webcam>
+
+    <button class="btn btn-large btn-primary" ng-click="makeSnapshot()">Take snapshot!</button>
+
+    <div class="span6">
+        <canvas id="snapshot" class="well pull-right"></canvas>
+        <button class="btn btn-large btn-primary" ng-disabled="!snapshotData" ng-click="downloadSnapshot(snapshotData)" disabled="disabled">Download ^^</button>
+        <button class="btn btn-small" ng-click="showBase64 = !showBase64">Show as base64 encoded URL</button>
+        <textarea class="snapshot-data ng-pristine ng-valid" ng-show="showBase64" ng-model="snapshotData" style="display: none;"></textarea>
+    </div>
+</section>
+<!-- /.content -->
+

@@ -2,7 +2,10 @@
  * 
  */
 
-angular.module('AppUI', ['ui.router', 'ui.bootstrap', 'datatables', 'datatables.buttons', 'AppUI.routing', 'angular-jwt'])
+angular.module('AppUI', ['ui.router', 'ui.bootstrap',
+                         'webcam', 'camera',
+                         'datatables', 'datatables.buttons', 
+                         'AppUI.routing', 'angular-jwt'])
 
 .run(['authService', function (authService) {
     authService.fillAuthData();

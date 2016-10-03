@@ -51,6 +51,16 @@ angular.module('AppUI.routing', [])
 		    templateUrl: 'content/views/project/projectList.html',
 		    controller: 'ProjectCtrl'
 		})
+		.state('home.webcam', {
+		    url: '/webcam',
+		    templateUrl: 'content/views/webcam/webcam.html',
+		    controller: 'WebcamCtrl'
+		})
+		.state('home.camera', {
+		    url: '/camera',
+		    templateUrl: 'content/views/camera/camera.html',
+		    controller: 'CameraCtrl'
+		})
 		
 	$urlRouterProvider.otherwise('/');
 })
